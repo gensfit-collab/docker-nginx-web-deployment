@@ -40,59 +40,15 @@ Architecture Overview
 
 
 
-The project follows a containerized deployment architecture:
+The application follows a containerized deployment workflow where the developer creates the website source code, Docker builds a custom Nginx image from the Dockerfile, and a Docker container serves the website through Nginx. The application is exposed on port \*\*8080\*\*, allowing users to access it from a web browser.
 
 
 
-Developer
+Architecture Diagram
 
-&#x20;   |
 
-&#x20;   v
 
-Website Source Code
-
-(HTML/CSS/JavaScript)
-
-&#x20;   |
-
-&#x20;   v
-
-GitHub Repository
-
-&#x20;   |
-
-&#x20;   v
-
-Dockerfile
-
-&#x20;   |
-
-&#x20;   v
-
-Docker Image
-
-enterprise-nginx-webserver:v1
-
-&#x20;   |
-
-&#x20;   v
-
-Docker Container
-
-enterprise-nginx
-
-&#x20;   |
-
-&#x20;   v
-
-Nginx Web Server
-
-&#x20;   |
-
-&#x20;   v
-
-Deployed Web Application
+!\[Docker Architecture](screenshots/docker-architecture-diagram.png)
 
 
 
@@ -280,13 +236,35 @@ The "screenshots" directory contains deployment evidence, including:
 
 
 
-\- Docker image build confirmation
+&#x20;Docker Build
 
-\- Running container status
 
-\- Port mapping verification
 
-\- Application deployment output
+!\[Docker Build](screenshots/docker-build.png)
+
+
+
+&#x20;Docker Images
+
+
+
+!\[Docker Images](screenshots/docker-images.png)
+
+
+
+Running Container
+
+
+
+!\[Running Container](screenshots/docker-container-running.png)
+
+
+
+&#x20;Website Preview
+
+
+
+!\[Website Preview](screenshots/website-preview.png)
 
 
 
