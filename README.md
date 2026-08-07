@@ -36,21 +36,33 @@ This project showcases the use of containerization principles to deliver a repea
 
 
 
-Architecture Overview
+\## Architecture Overview
 
 
 
-The application follows a containerized deployment workflow where the developer creates the website source code, Docker builds a custom Nginx image from the Dockerfile, and a Docker container serves the website through Nginx. The application is exposed on port \*\*8080\*\*, allowing users to access it from a web browser.
+The application uses a containerized deployment workflow built with Docker and Nginx.
 
 
 
-Architecture Diagram
+The workflow begins with the website source code, which is packaged into a custom Docker image using a Dockerfile. The image is then deployed as a Docker container running an Nginx web server. The container exposes port \*\*8080\*\*, making the application accessible through a web browser.
+
+
+
+This architecture provides a lightweight, portable, and consistent deployment process across different environments.
+
+
+
+
+
+\## Docker Architecture Diagram
+
+
+
+The architecture diagram below illustrates the complete deployment flow, from source code to the running Nginx container.
 
 
 
 !\[Docker Architecture](screenshots/docker-architecture-diagram.png)
-
-
 
 Deployment Flow
 
@@ -228,15 +240,19 @@ http://localhost:8080
 
 
 
-Screenshots
+\## Deployment Evidence
 
 
 
-The "screenshots" directory contains deployment evidence, including:
+The `screenshots` directory contains deployment validation evidence demonstrating the successful containerization and deployment process.
 
 
 
-&#x20;Docker Build
+\### Docker Image Build
+
+
+
+The Docker image was successfully built using the custom Dockerfile configuration.
 
 
 
@@ -244,7 +260,11 @@ The "screenshots" directory contains deployment evidence, including:
 
 
 
-&#x20;Docker Images
+\### Docker Image Verification
+
+
+
+The generated Docker image is available locally and ready for container deployment.
 
 
 
@@ -252,21 +272,15 @@ The "screenshots" directory contains deployment evidence, including:
 
 
 
-Running Container
+\### Running Container
+
+
+
+The Nginx container is running successfully and serving the web application through the exposed port.
 
 
 
 !\[Running Container](screenshots/docker-container-running.png)
-
-
-
-&#x20;Website Preview
-
-
-
-!\[Website Preview](screenshots/website-preview.png)
-
-
 
 
 
