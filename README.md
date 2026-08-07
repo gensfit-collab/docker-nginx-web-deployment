@@ -96,7 +96,7 @@ The screenshots below demonstrate the successful containerization and deployment
 
 ### Website Preview
 
-![Website Preview](screenshots/website-preview.png)
+![Website Preview](screenshots/Website-preview.png)
 
 ## Architecture
 
@@ -104,7 +104,7 @@ The application follows a containerized deployment workflow. The website source 
 
 ### Architecture Diagram
 
-![Docker Architecture](docs/docker-architecture-diagram.png)
+![Docker Architecture](screenshots/docker-architecture-diagram.png)
 
 ## Future Improvements
 
