@@ -96,7 +96,7 @@ The screenshots below demonstrate the successful containerization and deployment
 
 ### Website Preview
 
-![Website Preview](screenshots/Website-preview.png)
+![Website Preview](screenshots/website-preview.png)
 
 ## Architecture
 
